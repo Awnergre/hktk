@@ -92,7 +92,7 @@ h1 {
   <div class="produk-container">
 
     <div class="produk-card">
-      <img src="ml-44345-2000-1-1747810320.webp" alt="Akun MLBB Mythic" />
+      <img src="ml-44345-2000-1-1747810320.jpg"Akun MLBB Mythic" />
       <div class="produk-info">
         <h2>ROGER PRIME </h2>
         <p>Rp 120.000</p>
