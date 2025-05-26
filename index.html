@@ -14,7 +14,7 @@
 }
 
 h1 {
-  color: #000;
+  color: #fff;
 }
 
 .produk-container {
@@ -27,7 +27,7 @@ h1 {
 
 .produk-card {
   background: #040720;
-  width: calc(100% / 6 - 15px);
+  width: calc(50% - 15px); /* 2 kartu per baris */
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   overflow: hidden;
@@ -41,9 +41,11 @@ h1 {
 }
 
 .produk-card img {
-  width: 150px;
-  height: 250px;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* menampilkan seluruh gambar tanpa crop */
+  background: #fff; /* opsional: beri latar belakang putih jika gambar transparan */
+  display: block;
 }
 
 .produk-info {
@@ -77,29 +79,6 @@ h1 {
 .produk-info a:hover {
   background-color: #1ebe57;
 }
-
-/* Responsive */
-@media (max-width: 1200px) {
-  .produk-card {
-    width: calc(100% / 4 - 15px);
-  }
-}
-
-@media (max-width: 900px) {
-  .produk-card {
-    width: calc(100% / 3 - 15px);
-  }
-}
-
-@media (max-width: 600px) {
-  .produk-card {
-    width: calc(100% / 2 - 15px); /* 2 kartu per baris di HP */
-  }
-  .produk-container {
-    justify-content: flex-start;
-  }
-}
-
 
 }
 
